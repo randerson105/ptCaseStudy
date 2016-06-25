@@ -1,46 +1,63 @@
 body {
 	color: #666666; 
-	background-color: #FFFFFF;
+	background-color: #90C7E3;
+	background-image: linear-gradient(to bottom, #ffffff, #90C7E3);
+	background-repeat: no-repeat;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
 header {	
 	color: #FFFFFF;
 	background-color: #000033;
-}
-header {
-	background-image: url(images/sunset.jpg);
+	background-image: url(../images/sunset.jpg);
 	background-position: right;
 	background-repeat: no-repeat;
-	line-height: 400%;
-	text-indent: 1em;
+	text-align: center;
+	height: 60px;
+	padding-top: 15px;
 }
 
 nav {
 	background-color: #90C7E3;
 	font-weight: bold;
+	background-color: #ffffff;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 nav a {
 	text-decoration: none;
+	
+}
+
+main {
+	padding-top: 1px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	display: block;
 }
 
 h1 {
-	margin-bottom: 0;
-	font-family: Georgia, Times New Roman, serif;
+	margin-top: 0;
 }
 
 h2 {
 	color: #3399CC;
-	font-family: Georgia, Times New Roman, serif;
+	text-shadow: 1px 1px 1px #cccccc;
 }
 
 h3 {	
 	color: #000033;
+}
+
+h1, h2, h3 {
 	font-family: Georgia, Times New Roman, serif;
 }
 
-ul { list-style-type: url(images/marker.gif);
+ul { 
+	list-style-image: url(../images/marker.gif);
 }
 
 footer {
@@ -48,16 +65,45 @@ footer {
 	font-size: .75em;
 	font-style: italic;
 	text-align: center;
+	padding-bottom: 20px;
 }
 
 .resort {
 	color: #5C7fA3;
-	
+	font-weight: bold;
 }
 
 #contact {
 	font-size: .90em;
 }
 
-#content p {background-color: #yellow;
+#wrapper {
+	width: 80%;
+	background-color: #ffffff;
+	min-width: 960px;
+	max-width: 2048px;
+	box-shadow: 3px 3px 3px #333333;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#homehero {
+	height: 300px;
+	background-image: url(../images/coasthero.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+#yurthero {
+	height: 300px;
+	background-image: url(../images/yurthero.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+#trailhero {
+	height: 300px;
+	background-image: url(../images/trailhero.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 }
