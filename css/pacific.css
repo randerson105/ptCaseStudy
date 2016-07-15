@@ -224,6 +224,7 @@ figure {
 	left: -1000px;
 	opacity: 0;
 	transition: opacity 3s ease-in-out;
+	color: #5C7fA3;
 }
 #gallery a:hover span {
 	position: absolute;
