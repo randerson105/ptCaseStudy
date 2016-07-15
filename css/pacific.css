@@ -19,6 +19,7 @@ header {
 	text-align: center;
 	height: 60px;
 	padding-top: 15px;
+	opacity:1;
 }
 
 nav {
@@ -30,6 +31,7 @@ nav {
 
 nav a {
 	text-decoration: none;
+	transition: color 3s ease-out;
 }
 
 nav ul {
@@ -88,7 +90,8 @@ footer {
 	font-size: .75em;
 	font-style: italic;
 	text-align: center;
-	padding-bottom: 20px;
+	padding: 20px 20px 20px 20px;
+	clear: both:
 }
 
 .resort {
@@ -140,6 +143,94 @@ footer {
 
 #desktop {
 	display: inline;
+}
+
+
+table {
+	border: 1px solid #3399CC; 
+	width: 80%;
+	border-spacing: 0;
+}
+
+td, th {
+	border: 1px solid #3399CC; 
+	padding: 5px 5px 5px 5px;
+}
+
+td { 
+	text-align: center;
+}
+
+.text {
+	text-align: left;
+}
+
+tr:nth-of-type(odd) {
+	background-color: #F5FAFC;
+}
+
+label {
+	float: left;
+	display: block;
+	text-align: right;
+	width: 120px;
+	padding-right: 10px;
+}
+
+input, textarea {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.sb {
+	margin-left: 130px;
+}
+
+video, embed {
+	float: right;
+	padding-right: 20px;
+}
+
+#gallery {
+	position: relative;
+	height: 200px;
+}
+
+figure {
+	position: absolute;
+	left: 280px;
+	opacity: .25;
+	text-align: center;
+}
+
+#gallery ul {
+	width: 300px;
+	list-style-type: none;
+}
+#gallery li {
+	display: inline;
+	float: left;
+	padding: 10px;
+}
+#gallery img {
+	border-style: none;
+}
+#gallery a {
+	text-decoration: none;
+	font-style: italic;
+}
+#gallery span {
+	position: absolute;
+	left: -1000px;
+	opacity: 0;
+	transition: opacity 3s ease-in-out;
+}
+#gallery a:hover span {
+	position: absolute;
+	top: 16px;
+	left: 320px;
+	text-align: center;
+	opacity: 1;
 }
 
 @media only screen and (max-width: 64em) {
@@ -194,6 +285,13 @@ footer {
 	nav {
 		padding: 0px 0px 0px 0px;
 	}
+	
+	nav li {
+		display: block;
+		margin: 0px 0px 0px 0px;
+		border-bottom: 1px solid #330000; 
+	}
+	
 	nav a {
 		display: block;
 	}
@@ -208,27 +306,17 @@ footer {
 	#desktop {
 	display: none;
 	}
-}
+	
+	label {
+	float: none;
+	text-align: left;	
+	}
 
-table {
-	border: 1px solid #3399CC; 
-	width: 80%;
-	border-spacing: 0;
-}
-
-td, th {
-	border: 1px solid #3399CC; 
-	padding: 5px 5px 5px 5px;
-}
-
-td { 
-	text-align: center;
-}
-
-.text {
-	text-align: left;
-}
-
-tr:nth-of-type(odd) {
-	background-color: #F5FAFC;
+	.sb {
+		margin-left:0;
+	}
+	
+	#gallery {
+		display: none;
+	}
 }
